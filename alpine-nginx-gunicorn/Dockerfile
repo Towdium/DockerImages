@@ -1,7 +1,7 @@
 # alpine-nginx-gunicorn
 
 FROM alpine:latest
-MAINTAINER Towdium <towdium@gmail.com>
+LABEL maintainer="towdium@gmail.com"
 
 RUN if [ -z "$HTTP_PROXY" ]; then py_proxy=""; \
  else py_proxy="--proxy=$HTTP_PROXY"; fi \
